@@ -4,8 +4,9 @@ end
 
 local cloneref : (obj : Instance) -> Instance = cloneref or blackfunction
 
-local C : sharedTable = {}
+local C = {}
 C.Players : Players = cloneref(game:GetService('Players'))
 C.Workspace : Workspace = cloneref(game:GetService('Workspace'))
 
-return C : sharedTable
+print('test')
+return C
